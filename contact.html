@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Завод-Редуктор</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="assets/images/logo.svg" alt="">
+                        <span>
+                            Завод-редуктор
+                        </span>
+                    </a>
+                </div>
+                <div class="header__center">
+                    <nav>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    О компании
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Сертификаты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Охрана труда
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Вакансия
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    Редукторы
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Червячные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Цилиндрические редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коническо-цилиндрические
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Планетарные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Мотор-редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Специальные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ремонт редукторов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Электродвигатели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    Металлообработка
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Фрезерная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Токарная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Листовая обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контрактное производство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Изделия из пластмасс
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Механо-сборочные работы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Покрытия
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Дополнительная обработка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <div class="header__right-item">
+                        <a href="tel:" class="tel">
+                            +7 (3412) 570-340
+                        </a>
+                    </div>
+                    <div class="header__right-item">
+                        <a href="mailto:" class="mail">
+                            sell@zavod-reduktor.ru
+                        </a>
+                    </div>
+                    <button class="header__menu-btn">
+                        меню
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="header__mobile-menu">
+        <nav>
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        О компании
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Сертификаты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Охрана труда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Вакансия
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        Редукторы
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Червячные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Цилиндрические редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Коническо-цилиндрические
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Планетарные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Мотор-редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Специальные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ремонт редукторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Электродвигатели
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        Металлообработка
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Фрезерная обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Токарная обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Листовая обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контрактное производство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Изделия из пластмасс
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Механо-сборочные работы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Покрытия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Дополнительная обработка
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__mobile-menu__address">
+            <div class="header__mobile-menu__address__item">
+                <p class="name">
+                    Редукторы
+                </p>
+                <p class="value">
+                    г. Можга, Сюгаильский пр., 15
+                </p>
+            </div>
+            <div class="header__mobile-menu__address__item">
+                <p class="name">
+                    Металлообработка
+                </p>
+                <p class="value">
+                    г. Ижевск, Воткинское шоссе, 308
+                </p>
+            </div>
+        </div>
+        <div class="header__mobile-menu__bottom">
+            <div class="header__mobile-menu__contact">
+                <a href="" class="header__mobile-menu__tel">
+                    +7 (3412) 570-340
+                </a>
+                <a href="" class="header__mobile-menu__mail">
+                    sell@zavod-reduktor.ru
+                </a>
+            </div>
+            <a href="" class="header__mobile-menu__btn">
+                Бесплатный подбор редуктора
+            </a>
+        </div>
+    </div>
+    <section class="contact-page">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="contact-page__wrap">
+                <h1 class="contact-page__title">
+                    Контактная информация
+                </h1>
+                <div class="contact-page__main">
+                    <div class="contact-page__top">
+                        <div class="contact-page__top__item">
+                            <p class="contact-page__top__name">
+                                Производство редукторов
+                            </p>
+                            <div class="contact-page__top__contacts">
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        Адрес
+                                    </p>
+                                    <p class="text">
+                                        г. Можга, Сюгаильский пр., 15
+                                    </p>
+                                </div>
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        Email
+                                    </p>
+                                    <a href="" class="text">
+                                        sell@zavod-reduktor.ru
+                                    </a>
+                                </div>
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        Телефон
+                                    </p>
+                                    <a href="" class="text">
+                                        +7 (3412) 570-340
+                                    </a>
+                                </div>
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        График работы
+                                    </p>
+                                    <p class="text">
+                                        ПН-ПТ 8:00-17:00 <span>(МСК+1)</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-page__top__map">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A47ec43d488ef40911c26f6fe56991559d5a1a44f429684c4c34e8a8193940927&amp;source=constructor"
+                                    width="500" height="400" frameborder="0"></iframe>
+                            </div>
+                            <div class="contact-page__top__manager">
+                                <p class="name">
+                                    Менеджеры
+                                </p>
+                                <div class="content">
+                                    <div class="manager__item">
+                                        <p class="manager__fio">
+                                            Сусекова Оксана Валентиновна 
+                                        </p>
+                                        <a href="">
+                                            +7 (922) 523 88 56
+                                        </a>
+                                        <a href="" class="">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="manager__item">
+                                        <p class="manager__fio">
+                                            Сусекова Оксана Валентиновна 
+                                        </p>
+                                        <a href="">
+                                            +7 (922) 523 88 56
+                                        </a>
+                                        <a href="" class="">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="manager__item">
+                                        <p class="manager__fio">
+                                            Сусекова Оксана Валентиновна 
+                                        </p>
+                                        <a href="">
+                                            +7 (922) 523 88 56
+                                        </a>
+                                        <a href="" class="">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-page__top__item">
+                            <p class="contact-page__top__name">
+                                Металлообработка
+                            </p>
+                            <div class="contact-page__top__contacts">
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        Адрес
+                                    </p>
+                                    <p class="text">
+                                        г. Ижевск, Воткинское шоссе, 308
+                                    </p>
+                                </div>
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        Email
+                                    </p>
+                                    <a href="" class="text">
+                                        uslugi@zavod-reduktor.ru
+                                    </a>
+                                </div>
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        Телефон
+                                    </p>
+                                    <a href="" class="text">
+                                        +7 (3412) 570-988
+                                    </a>
+                                </div>
+                                <div class="contact-page__top__contacts__item">
+                                    <p class="name">
+                                        График работы
+                                    </p>
+                                    <p class="text">
+                                        ПН-ПТ 8:00-17:00 <span>(МСК+1)</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-page__top__map">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A47ec43d488ef40911c26f6fe56991559d5a1a44f429684c4c34e8a8193940927&amp;source=constructor"
+                                    width="500" height="400" frameborder="0"></iframe>
+                            </div>
+                            <div class="contact-page__top__manager">
+                                <p class="name">
+                                    Менеджеры
+                                </p>
+                                <div class="content">
+                                    <div class="manager__item">
+                                        <p class="manager__fio">
+                                            Сусекова Оксана Валентиновна 
+                                        </p>
+                                        <a href="">
+                                            +7 (922) 523 88 56
+                                        </a>
+                                        <a href="" class="">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="manager__item">
+                                        <p class="manager__fio">
+                                            Сусекова Оксана Валентиновна 
+                                        </p>
+                                        <a href="">
+                                            +7 (922) 523 88 56
+                                        </a>
+                                        <a href="" class="">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="manager__item">
+                                        <p class="manager__fio">
+                                            Сусекова Оксана Валентиновна 
+                                        </p>
+                                        <a href="">
+                                            +7 (922) 523 88 56
+                                        </a>
+                                        <a href="" class="">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-page__bottom">
+                        <div class="contact-page__bottom_left">
+                            <p class="name">
+                                реквизиты
+                            </p>
+                            <div class="content">
+                                <p class="company">
+                                    Общество с ограниченной ответственностью «ЗАВОД-РЕДУКТОР»
+                                </p>
+                                <p>
+                                    ИНН/КПП: <span>1839003614/183901001</span>
+
+                                </p>
+                                <p>
+                                    ОГРН: <span>1101839000845</span>
+                                </p>
+                            </div>
+                            <a href="" class="requisites__link">
+                                реквизиты компании <span>(PDF, 90 кб)</span>
+                            </a>
+                        </div>
+                        <div class="contact-page__bottom__right">
+                            <div class="contact-page__bottom__item">
+                                <p class="name">
+                                    <span>менеджеры по продажам,</span> редукторы
+                                </p>
+                                <div class="content">
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-page__bottom__item">
+                                <p class="name">
+                                    <span>менеджеры по продажам,</span> металлобработка
+                                </p>
+                                <div class="content">
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                    <div class="item__contact">
+                                        <p class="fio">
+                                            Сусекова Оксана Валентиновна
+                                        </p>
+                                        <p class="tel">
+                                            +7 (922) 523 88 56
+                                        </p>
+                                        <a href="" class="mail">
+                                            oks@zavod-reduktor.ru
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="feedback__wrap">
+                <p class="feedback__pretitle">
+                    форма обратной связи
+                </p>
+                <h2 class="feedback__title">
+                    БЕСПЛАТНЫЙ ПОДБОР РЕДУКТОРА
+                </h2>
+                <div class="feedback__main">
+                    <form action="">
+                        <div class="form__content">
+                            <input type="text" placeholder="ваше имя">
+                            <input type="text" placeholder="номер телефона">
+                            <input type="text" placeholder="e-mail">
+                            <textarea name="" id="" placeholder="сообщение"></textarea>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox-input" id="form-policy" name="form-policy"
+                                value="form-policy">
+                            <label for="form-policy" class="checkbox-label">Нажимая кнопку «Отправить», я подтверждаю
+                                свое <a href="">согласие на обработку моих персональных данных</a></label>
+                        </div>
+                        <button>
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-three"></div>
+        <div class="line-four"></div>
+        <div class="line-five"></div>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer_top">
+                    <div class="col">
+                        <a href="" class="footer__logo">
+                            <img src="assets/images/footer_logo.svg" alt="">
+                            <span>
+                                Завод-редуктор
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Продукция
+                        </p>
+                        <div class="col__content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Червячные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Цилиндрические редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коническо-цилиндрические
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Планетарные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Мотор-редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Специальные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ремонт редукторов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Электродвигатели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Металлообработка
+                        </p>
+                        <div class="col__content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Фрезерная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Токарная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Листовая обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контрактное производство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Изделия из пластмасс
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Механо-сборочные работы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Покрытия
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Дополнительная обработка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col footer__contact">
+                        <p class="name">
+                            Контакты
+                        </p>
+                        <div class="col__content col__contact">
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Производство редукторов
+                                </p>
+                                <p class="col__contact__item__text">
+                                    г. Можга, проезд Сюгаильский, 15
+                                </p>
+                                <a href="" class="col__contact__item__tel">
+                                    +7 (3412) 570-340
+                                </a>
+                                <a href="" class="col__contact__item__mail">
+                                    sell@zavod-reduktor.ru
+                                </a>
+                            </div>
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Металлообработка
+                                </p>
+                                <p class="col__contact__item__text">
+                                    г. Ижевск, Воткинское шоссе, 308
+                                </p>
+                                <a href="" class="col__contact__item__tel">
+                                    +7 (3412) 570-988
+                                </a>
+                                <a href="" class="col__contact__item__mail">
+                                    uslugi@zavod-reduktor.ru
+                                </a>
+                            </div>
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Соцсети
+                                </p>
+                                <a href="" class="col__contact__item__soc">
+                                    ВКонтакте
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="col">
+                        <p class="footer__copyright">
+                            ООО «ЗАВОД-РЕДУКТОР». Все права защищены
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="footer__policy">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                    <div class="col">
+                        <p class="footer__design">
+                            Дизайн сайта — 
+                            <a href="">
+                                FOMICHEV
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

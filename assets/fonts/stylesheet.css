@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-Bd.woff2') format('woff2'),
+        url('TTHovesProTrial-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-BdIt.woff2') format('woff2'),
+        url('TTHovesProTrial-BdIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-Blk.woff2') format('woff2'),
+        url('TTHovesProTrial-Blk.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-XLt.woff2') format('woff2'),
+        url('TTHovesProTrial-XLt.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-LtIt.woff2') format('woff2'),
+        url('TTHovesProTrial-LtIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial Hairline';
+    src: url('TTHovesProTrial-Hairline.woff2') format('woff2'),
+        url('TTHovesProTrial-Hairline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-XBd.woff2') format('woff2'),
+        url('TTHovesProTrial-XBd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial Hairline';
+    src: url('TTHovesProTrial-HairlineIt.woff2') format('woff2'),
+        url('TTHovesProTrial-HairlineIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-XLtIt.woff2') format('woff2'),
+        url('TTHovesProTrial-XLtIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-XBdIt.woff2') format('woff2'),
+        url('TTHovesProTrial-XBdIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-It.woff2') format('woff2'),
+        url('TTHovesProTrial-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-DmBd.woff2') format('woff2'),
+        url('TTHovesProTrial-DmBd.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-DmBdIt.woff2') format('woff2'),
+        url('TTHovesProTrial-DmBdIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-ThIt.woff2') format('woff2'),
+        url('TTHovesProTrial-ThIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Bold Outline Trial';
+    src: url('TTHovesPro-BdOutlineIt.woff2') format('woff2'),
+        url('TTHovesPro-BdOutlineIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-MdIt.woff2') format('woff2'),
+        url('TTHovesProTrial-MdIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-Rg.woff2') format('woff2'),
+        url('TTHovesProTrial-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-Th.woff2') format('woff2'),
+        url('TTHovesProTrial-Th.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-BlkIt.woff2') format('woff2'),
+        url('TTHovesProTrial-BlkIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Bold Outline Trial';
+    src: url('TTHovesPro-BdOutline.woff2') format('woff2'),
+        url('TTHovesPro-BdOutline.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-Lt.woff2') format('woff2'),
+        url('TTHovesProTrial-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial Variable';
+    src: url('TTHovesProTrialVariable.woff2') format('woff2'),
+        url('TTHovesProTrialVariable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves Pro Trial';
+    src: url('TTHovesProTrial-Md.woff2') format('woff2'),
+        url('TTHovesProTrial-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

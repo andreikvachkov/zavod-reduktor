@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Завод-Редуктор</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="assets/images/logo.svg" alt="">
+                        <span>
+                            Завод-редуктор
+                        </span>
+                    </a>
+                </div>
+                <div class="header__center">
+                    <nav>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    О компании
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Сертификаты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Охрана труда
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Вакансия
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    Редукторы
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Червячные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Цилиндрические редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коническо-цилиндрические
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Планетарные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Мотор-редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Специальные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ремонт редукторов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Электродвигатели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    Металлообработка
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Фрезерная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Токарная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Листовая обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контрактное производство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Изделия из пластмасс
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Механо-сборочные работы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Покрытия
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Дополнительная обработка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <div class="header__right-item">
+                        <a href="tel:" class="tel">
+                            +7 (3412) 570-340
+                        </a>
+                    </div>
+                    <div class="header__right-item">
+                        <a href="mailto:" class="mail">
+                            sell@zavod-reduktor.ru
+                        </a>
+                    </div>
+                    <button class="header__menu-btn">
+                        меню
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="header__mobile-menu">
+        <nav>
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        О компании
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Сертификаты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Охрана труда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Вакансия
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        Редукторы
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Червячные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Цилиндрические редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Коническо-цилиндрические
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Планетарные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Мотор-редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Специальные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ремонт редукторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Электродвигатели
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        Металлообработка
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Фрезерная обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Токарная обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Листовая обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контрактное производство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Изделия из пластмасс
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Механо-сборочные работы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Покрытия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Дополнительная обработка
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__mobile-menu__address">
+            <div class="header__mobile-menu__address__item">
+                <p class="name">
+                    Редукторы
+                </p>
+                <p class="value">
+                    г. Можга, Сюгаильский пр., 15
+                </p>
+            </div>
+            <div class="header__mobile-menu__address__item">
+                <p class="name">
+                    Металлообработка
+                </p>
+                <p class="value">
+                    г. Ижевск, Воткинское шоссе, 308
+                </p>
+            </div>
+        </div>
+        <div class="header__mobile-menu__bottom">
+            <div class="header__mobile-menu__contact">
+                <a href="" class="header__mobile-menu__tel">
+                    +7 (3412) 570-340
+                </a>
+                <a href="" class="header__mobile-menu__mail">
+                    sell@zavod-reduktor.ru
+                </a>
+            </div>
+            <a href="" class="header__mobile-menu__btn">
+                Бесплатный подбор редуктора
+            </a>
+        </div>
+    </div>
+    <section class="frezer-hero">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="frezer-hero__wrap">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Металлобработка
+                            </a>
+                        </li>
+                        <li>
+                            Фрезерная обработка на заказ
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="frezer-hero__title">
+                    Фрезерная обработка на&nbsp;заказ
+                </h1>
+                <div class="frezer-hero__bottom">
+                    <div class="frezer-hero__bottom_left">
+                        <div class="frezer-hero__bottom__text">
+                            Выполняем фрезерные работы по металлу по чертежам заказчика и с разработкой собственной КД
+                            на высокоточных станках с ЧПУ. Изготавливаем как крупные, так и мелкие детали со сложной
+                            геометрией, хорошо отлажено изготовление корпусных деталей. Обрабатываем поверхности с
+                            высокими требованиями, уступы, пазы, фаски, канавки и прочее
+                        </div>
+                        <div class="frezer-hero__bottom__text frezer-hero__bottom__text_mob">
+                            Выполняем фрезерные работы по металлу по чертежам заказчика и с разработкой собственной КД
+                            на высокоточных станках с ЧПУ
+                        </div>
+                        <a href="" class="frezer-hero__bottom__btn">
+                            Заказать услугу
+                        </a>
+                    </div>
+                    <div class="frezer-hero__bottom_right">
+                        <div class="frezer-hero__bottom__item">
+                            <p class="num">
+                                2000х1500х1200 мм
+                            </p>
+                            <p class="text">
+                                Минимальные размеры
+                            </p>
+                        </div>
+                        <div class="frezer-hero__bottom__item">
+                            <p class="num">
+                                до 6 Квалитет
+                            </p>
+                            <p class="text">
+                                Точность
+                            </p>
+                        </div>
+                    </div>
+                    <a href="" class="frezer-hero__bottom__btn_mob">
+                        Заказать услугу
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frezer-production">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="frezer-production__wrap">
+                <div class="frezer-production__left">
+                    <p class="frezer-production__pretitle">
+                        Собственное производство
+                    </p>
+                    <h2 class="frezer-production__title">
+                        Изготавливаем
+                    </h2>
+                    <div class="frezer-production__text">
+                        Приоритетным и ключевым направлением деятельности нашей компании является - фрезерная обработка
+                        деталей из металла на вертикальных и горизонтальных обрабатывающих центрах с ЧПУ
+                    </div>
+
+                    <div class="frezer-production__content accordion frezer-production__content_desktop">
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <span>
+                                    01
+                                </span>
+                                Виды фрезерных работ
+                            </div>
+                            <div class="accordion__body">
+                                <div class="accordion__content">
+                                    <ul>
+                                        <li>
+                                            Фрезерная обработка деталей на 3-х, 4-х и 5-координатных станках;
+                                        </li>
+                                        <li>
+                                            Сложные корпусные детали из алюминия с высокими требованиями к
+                                            поверхностям;
+                                        </li>
+                                        <li>
+                                            Изготовление радиаторов;
+                                        </li>
+                                        <li>
+                                            Изготовление тонкостенных деталей методом фрезерования;
+                                        </li>
+                                        <li>
+                                            Обработку прямых и наклонных плоскостей с высокой точностью;
+                                        </li>
+                                        <li>
+                                            Обработка сталей разных марок, цветных металлов и их сплавов,
+                                            неметаллических
+                                            материалов;
+                                        </li>
+                                        <li>
+                                            100% визуальный и измерительный контроль, а также неразрушающие виды
+                                            контроля,
+                                            такие как рентгенограмма и ультразвуковой контроль;
+                                        </li>
+                                        <li>
+                                            Программная оптимизация технологических процессов.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <span>
+                                    02
+                                </span>
+                                Детали
+                            </div>
+                            <div class="accordion__body">
+                                <div class="accordion__content">
+                                    <ul>
+                                        <li>
+                                            Фрезерная обработка деталей на 3-х, 4-х и 5-координатных станках;
+                                        </li>
+                                        <li>
+                                            Сложные корпусные детали из алюминия с высокими требованиями к
+                                            поверхностям;
+                                        </li>
+                                        <li>
+                                            Изготовление радиаторов;
+                                        </li>
+                                        <li>
+                                            Изготовление тонкостенных деталей методом фрезерования;
+                                        </li>
+                                        <li>
+                                            Обработку прямых и наклонных плоскостей с высокой точностью;
+                                        </li>
+                                        <li>
+                                            Обработка сталей разных марок, цветных металлов и их сплавов,
+                                            неметаллических
+                                            материалов;
+                                        </li>
+                                        <li>
+                                            100% визуальный и измерительный контроль, а также неразрушающие виды
+                                            контроля,
+                                            такие как рентгенограмма и ультразвуковой контроль;
+                                        </li>
+                                        <li>
+                                            Программная оптимизация технологических процессов.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frezer-production__right">
+                    <div class="frezer-production__right__content">
+                        <div class="swiper frezer-production__main-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                            </div>
+
+                        </div>
+                        <div class="swiper frezer-production__thumbs-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/production.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frezer-production__swiper__bottom">
+                        <p class="frezer-production__swiper__bottom__text">
+                            Корпуса
+                        </p>
+                        <div class="frezer-production__swiper__pagination"></div>
+                        <div class="frezer-production__swiper__btn">
+                            <button class="frezer-production__swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM19 9H1V7H19V9Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <button class="frezer-production__swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M18.7071 7.2929C19.0976 7.68342 19.0976 8.31659 18.7071 8.70711L12.3431 15.0711C11.9526 15.4616 11.3195 15.4616 10.9289 15.0711C10.5384 14.6805 10.5384 14.0474 10.9289 13.6569L16.5858 8L10.9289 2.34315C10.5384 1.95262 10.5384 1.31946 10.9289 0.928934C11.3195 0.53841 11.9526 0.53841 12.3431 0.928934L18.7071 7.2929ZM1.74846e-07 7L18 7L18 9L-1.74846e-07 9L1.74846e-07 7Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="frezer-production__content accordion frezer-production__content_mob">
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                01
+                            </span>
+                            Виды фрезерных работ
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <ul>
+                                    <li>
+                                        Фрезерная обработка деталей на 3-х, 4-х и 5-координатных станках;
+                                    </li>
+                                    <li>
+                                        Сложные корпусные детали из алюминия с высокими требованиями к
+                                        поверхностям;
+                                    </li>
+                                    <li>
+                                        Изготовление радиаторов;
+                                    </li>
+                                    <li>
+                                        Изготовление тонкостенных деталей методом фрезерования;
+                                    </li>
+                                    <li>
+                                        Обработку прямых и наклонных плоскостей с высокой точностью;
+                                    </li>
+                                    <li>
+                                        Обработка сталей разных марок, цветных металлов и их сплавов,
+                                        неметаллических
+                                        материалов;
+                                    </li>
+                                    <li>
+                                        100% визуальный и измерительный контроль, а также неразрушающие виды
+                                        контроля,
+                                        такие как рентгенограмма и ультразвуковой контроль;
+                                    </li>
+                                    <li>
+                                        Программная оптимизация технологических процессов.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                02
+                            </span>
+                            Детали
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <ul>
+                                    <li>
+                                        Фрезерная обработка деталей на 3-х, 4-х и 5-координатных станках;
+                                    </li>
+                                    <li>
+                                        Сложные корпусные детали из алюминия с высокими требованиями к
+                                        поверхностям;
+                                    </li>
+                                    <li>
+                                        Изготовление радиаторов;
+                                    </li>
+                                    <li>
+                                        Изготовление тонкостенных деталей методом фрезерования;
+                                    </li>
+                                    <li>
+                                        Обработку прямых и наклонных плоскостей с высокой точностью;
+                                    </li>
+                                    <li>
+                                        Обработка сталей разных марок, цветных металлов и их сплавов,
+                                        неметаллических
+                                        материалов;
+                                    </li>
+                                    <li>
+                                        100% визуальный и измерительный контроль, а также неразрушающие виды
+                                        контроля,
+                                        такие как рентгенограмма и ультразвуковой контроль;
+                                    </li>
+                                    <li>
+                                        Программная оптимизация технологических процессов.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frezer-material">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="frezer-material__wrap">
+                <h2 class="frezer-material__title">
+                    Материалы, с которыми мы работаем: сталь, алюминий, титан, бронза, фторопласт, капролон, латунь,
+                    пластик
+                </h2>
+                <div class="frezer-material__img-one">
+                    <img src="assets/images/material1.png" alt="">
+                </div>
+                <div class="frezer-material__img-two">
+                    <img src="assets/images/material2.png" alt="">
+                </div>
+                <div class="frezer-material__img-three">
+                    <img src="assets/images/material3.png" alt="">
+                </div>
+                <div class="frezer-material__img-four">
+                    <img src="assets/images/material4.png" alt="">
+                </div>
+                <div class="frezer-material__img-five">
+                    <img src="assets/images/material5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frezer-advantages">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="frezer-advantages__wrap">
+                <div class="frezer-advantages__left">
+                    <div class="frezer-advantages__left__content">
+                        <p class="frezer-advantages__pretitle">
+                            Собственное производство
+                        </p>
+                        <h2 class="frezer-advantages__title">
+                            Изготавливаем
+                        </h2>
+                        <div class="frezer-advantages__text">
+                            Обратившись к нам, вы получите комплексные услуги металлообработки «под ключ» – от чертежа
+                            до
+                            готового изделия. <span>Гибкая система ценообразования обеспечит оптимальный баланс качества
+                                и
+                                стоимости</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="frezer-advantages__right">
+                    <div class="frezer-advantages__right__item">
+                        <p class="num">
+                            01
+                        </p>
+                        <p class="name">
+                            Быстрое изготовление и поставка
+                        </p>
+                        <div class="text">
+                            Парк в 246 станков и культура производства позволяет в короткие сроки 5-15 дней сделать
+                            любой сложный заказ
+                        </div>
+                    </div>
+                    <div class="frezer-advantages__right__item">
+                        <p class="num">
+                            02
+                        </p>
+                        <p class="name">
+                            Разработка конструкторской документации
+                        </p>
+                        <div class="text">
+                            Штат конструкторов и программистов из 20 человек позволяет разработать КД любой сложности и
+                            написать программу под обработку в короткие сроки
+                        </div>
+                    </div>
+                    <div class="frezer-advantages__right__item">
+                        <p class="num">
+                            03
+                        </p>
+                        <p class="name">
+                            100% ОТК контроль
+                        </p>
+                        <div class="text">
+                            100% визуальный и измерительный контроль каждой детали партии, а также неразрушающие виды
+                            контроля: рентгенограмма и ультразвуковой контроль
+                        </div>
+                    </div>
+                    <div class="frezer-advantages__right__item">
+                        <p class="num">
+                            04
+                        </p>
+                        <p class="name">
+                            Нанесение покрытий
+                        </p>
+                        <div class="text">
+                            Собственная гальваническая и покрасочная линии позволяют придать вашим изделиям
+                            функциональные и эстетические свойства
+                        </div>
+                    </div>
+                    <div class="frezer-advantages__right__item">
+                        <p class="num">
+                            05
+                        </p>
+                        <p class="name">
+                            Гарантия — 5 лет
+                        </p>
+                        <div class="text">
+                            Мы гордимся нашим качеством, даем расширенную гарантию от 5 лет и полностью сопровождаем
+                            изделия в гарантийный период
+                        </div>
+                    </div>
+                    <div class="frezer-advantages__right__item">
+                        <p class="num">
+                            06
+                        </p>
+                        <p class="name">
+                            Изготовление сложных деталей
+                        </p>
+                        <div class="text">
+                            Высокоточная обработка на 3-х, 4-х и 5 координатных станках сложные тонкостенные изделия,
+                            радиоэлектронную технику, деталей с точным позиционированием, микросхемы и тд.
+                        </div>
+                    </div>
+                </div>
+                <div class="frezer-advantages__content accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                01
+                            </span>
+                            Быстрое изготовление и поставка
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                Парк в 246 станков и культура производства позволяет в короткие сроки 5-15 дней сделать
+                                любой сложный заказ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                02
+                            </span>
+                            Разработка конструкторской документации
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                Штат конструкторов и программистов из 20 человек позволяет разработать КД любой
+                                сложности и
+                                написать программу под обработку в короткие сроки
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                03
+                            </span>
+                            100% ОТК контроль
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                100% визуальный и измерительный контроль каждой детали партии, а также неразрушающие
+                                виды
+                                контроля: рентгенограмма и ультразвуковой контроль
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                04
+                            </span>
+                            Нанесение покрытий
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                Собственная гальваническая и покрасочная линии позволяют придать вашим изделиям
+                                функциональные и эстетические свойства
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                05
+                            </span>
+                            Гарантия — 5 лет
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                Мы гордимся нашим качеством, даем расширенную гарантию от 5 лет и полностью сопровождаем
+                                изделия в гарантийный период
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <span>
+                                06
+                            </span>
+                            Изготовление сложных деталей
+                        </div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                Высокоточная обработка на 3-х, 4-х и 5 координатных станках сложные тонкостенные
+                                изделия,
+                                радиоэлектронную технику, деталей с точным позиционированием, микросхемы и тд.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frezer-invitation">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="frezer-invitation__wrap">
+                <p class="frezer-invitation__pretitle">
+                    Собственное производство
+                </p>
+                <h2 class="frezer-invitation__title">
+                    приглашаем посетить цех по металлообработке
+                </h2>
+                <div class="frezer-invitation__text">
+                    Запишитесь заранее по телефону +7 (3412) 57-09-09, чтобы лично оценить безупречное качество деталей
+                    и высокий уровень культуры производства
+                </div>
+                <div class="frezer-invitation__main">
+                    <div class="frezer-invitation__main__content">
+                        <div class="swiper frezer-invitation__main-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/images/intite.png" alt="">
+                                    <div class="frezer-invitation__main-swiper__text">
+                                        Металлообработка на&nbsp;швейцарском станке Mikron
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/intite.png" alt="">
+                                    <div class="frezer-invitation__main-swiper__text">
+                                        Металлообработка на&nbsp;швейцарском станке Mikron
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/intite.png" alt="">
+                                    <div class="frezer-invitation__main-swiper__text">
+                                        Металлообработка на&nbsp;швейцарском станке Mikron
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/intite.png" alt="">
+                                    <div class="frezer-invitation__main-swiper__text">
+                                        Металлообработка на&nbsp;швейцарском станке Mikron
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/intite.png" alt="">
+                                    <div class="frezer-invitation__main-swiper__text">
+                                        Металлообработка на&nbsp;швейцарском станке Mikron
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="frezer-invitation__swiper-button-prev frezer-invitation__swiper-button-prev__decktop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM19 9H1V7H19V9Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <button
+                                class="frezer-invitation__swiper-button-next frezer-invitation__swiper-button-next_desktop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M18.7071 7.2929C19.0976 7.68342 19.0976 8.31659 18.7071 8.70711L12.3431 15.0711C11.9526 15.4616 11.3195 15.4616 10.9289 15.0711C10.5384 14.6805 10.5384 14.0474 10.9289 13.6569L16.5858 8L10.9289 2.34315C10.5384 1.95262 10.5384 1.31946 10.9289 0.928934C11.3195 0.53841 11.9526 0.53841 12.3431 0.928934L18.7071 7.2929ZM1.74846e-07 7L18 7L18 9L-1.74846e-07 9L1.74846e-07 7Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="swiper frezer-invitation__thumbs-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/images/intite.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/intite.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/intite.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/intite.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/intite.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frezer-invitation__swiper__bottom">
+                        <p class="frezer-invitation__swiper__bottom__text">
+                            Наше производство в&nbsp;Ижевске
+                        </p>
+                        <div class="frezer-invitation__swiper__pagination"></div>
+                        <div class="frezer-production__swiper__btn">
+                            <button class="frezer-invitation__swiper-button-prev frezer-invitation__swiper-button-prev__mob">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM19 9H1V7H19V9Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <button class="frezer-invitation__swiper-button-next frezer-invitation__swiper-button-next__mob">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M18.7071 7.2929C19.0976 7.68342 19.0976 8.31659 18.7071 8.70711L12.3431 15.0711C11.9526 15.4616 11.3195 15.4616 10.9289 15.0711C10.5384 14.6805 10.5384 14.0474 10.9289 13.6569L16.5858 8L10.9289 2.34315C10.5384 1.95262 10.5384 1.31946 10.9289 0.928934C11.3195 0.53841 11.9526 0.53841 12.3431 0.928934L18.7071 7.2929ZM1.74846e-07 7L18 7L18 9L-1.74846e-07 9L1.74846e-07 7Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frezer-uslugi">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="frezer-uslugi__wrap">
+                <p class="frezer-invitation__pretitle">
+                    услуги
+                </p>
+                <h2 class="frezer-invitation__title">
+                    дополнительные направления
+                </h2>
+                <div class="frezer-uslugi__text">
+                    Оказываем услуги по металлообработке для предприятий аэрокосмического и радиоэлектронного
+                    приборостроения, машиностроения, станкостроения, авиастроения и многих других
+                </div>
+                <div class="frezer-uslugi__main">
+                    <a href="" class="frezer-uslugi__link">
+                        <p class="frezer-uslugi__link__name">
+                            Координатная расточка
+                        </p>
+                        <div class="frezer-uslugi__link__text">
+                            Фрезерная обработка деталей из металла на вертикальных и горизонтальных обрабатывающих
+                            центрах с ЧПУ
+                        </div>
+                    </a>
+                    <a href="" class="frezer-uslugi__link">
+                        <p class="frezer-uslugi__link__name">
+                            Плоская шлифовка
+                        </p>
+                        <div class="frezer-uslugi__link__text">
+                            Все работы по высокоточной токарной обработке выполняются на швейцарских и японских станках
+                            с ЧПУ или на токарных универсальных станках
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="clients__wrap">
+                <p class="clients__pretitle">
+                    Клиенты
+                </p>
+                <h2 class="clients__title">
+                    нам доверяют
+                </h2>
+                <div class="clients__main">
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client1.png" alt="">
+                    </a>
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client2.png" alt="">
+                    </a>
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client3.png" alt="">
+                    </a>
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client4.png" alt="">
+                    </a>
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client5.png" alt="">
+                    </a>
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client6.png" alt="">
+                    </a>
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client7.png" alt="">
+                    </a>
+                    <a href="" class="clients__item">
+                        <p class="clients__item__name">
+                            Клиент: ООО «Евраз»
+                        </p>
+                        <img src="assets/images/client8.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="feedback__wrap">
+                <p class="feedback__pretitle">
+                    форма обратной связи
+                </p>
+                <h2 class="feedback__title">
+                    БЕСПЛАТНЫЙ ПОДБОР РЕДУКТОРА
+                </h2>
+                <div class="feedback__main">
+                    <form action="">
+                        <div class="form__content">
+                            <input type="text" placeholder="ваше имя">
+                            <input type="text" placeholder="номер телефона">
+                            <input type="text" placeholder="e-mail">
+                            <textarea name="" id="" placeholder="сообщение"></textarea>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox-input" id="form-policy" name="form-policy"
+                                value="form-policy">
+                            <label for="form-policy" class="checkbox-label">Нажимая кнопку «Отправить», я подтверждаю
+                                свое <a href="">согласие на обработку моих персональных данных</a></label>
+                        </div>
+                        <button>
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer_top">
+                    <div class="col">
+                        <a href="" class="footer__logo">
+                            <img src="assets/images/footer_logo.svg" alt="">
+                            <span>
+                                Завод-редуктор
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Продукция
+                        </p>
+                        <div class="col__content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Червячные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Цилиндрические редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коническо-цилиндрические
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Планетарные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Мотор-редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Специальные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ремонт редукторов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Электродвигатели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Металлообработка
+                        </p>
+                        <div class="col__content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Фрезерная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Токарная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Листовая обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контрактное производство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Изделия из пластмасс
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Механо-сборочные работы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Покрытия
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Дополнительная обработка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Контакты
+                        </p>
+                        <div class="col__content col__contact">
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Производство редукторов
+                                </p>
+                                <p class="col__contact__item__text">
+                                    г. Можга, проезд Сюгаильский, 15
+                                </p>
+                                <a href="" class="col__contact__item__tel">
+                                    +7 (3412) 570-340
+                                </a>
+                                <a href="" class="col__contact__item__mail">
+                                    sell@zavod-reduktor.ru
+                                </a>
+                            </div>
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Металлообработка
+                                </p>
+                                <p class="col__contact__item__text">
+                                    г. Ижевск, Воткинское шоссе, 308
+                                </p>
+                                <a href="" class="col__contact__item__tel">
+                                    +7 (3412) 570-988
+                                </a>
+                                <a href="" class="col__contact__item__mail">
+                                    uslugi@zavod-reduktor.ru
+                                </a>
+                            </div>
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Соцсети
+                                </p>
+                                <a href="" class="col__contact__item__soc">
+                                    ВКонтакте
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="col">
+                        <p class="footer__copyright">
+                            ООО «ЗАВОД-РЕДУКТОР». Все права защищены
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="footer__policy">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                    <div class="col">
+                        <p class="footer__design">
+                            Дизайн сайта — 
+                            <a href="">
+                                FOMICHEV
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

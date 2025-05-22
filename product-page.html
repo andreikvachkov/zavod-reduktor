@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Завод-Редуктор</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__left">
+                    <a href="" class="header__logo">
+                        <img src="assets/images/logo.svg" alt="">
+                        <span>
+                            Завод-редуктор
+                        </span>
+                    </a>
+                </div>
+                <div class="header__center">
+                    <nav>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    О компании
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Сертификаты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Охрана труда
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Вакансия
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    Редукторы
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Червячные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Цилиндрические редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коническо-цилиндрические
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Планетарные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Мотор-редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Специальные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ремонт редукторов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Электродвигатели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    Металлообработка
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">
+                                            Фрезерная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Токарная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Листовая обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контрактное производство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Изделия из пластмасс
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Механо-сборочные работы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Покрытия
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Дополнительная обработка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <div class="header__right-item">
+                        <a href="tel:" class="tel">
+                            +7 (3412) 570-340
+                        </a>
+                    </div>
+                    <div class="header__right-item">
+                        <a href="mailto:" class="mail">
+                            sell@zavod-reduktor.ru
+                        </a>
+                    </div>
+                    <button class="header__menu-btn">
+                        меню
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="header__mobile-menu">
+        <nav>
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        О компании
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Сертификаты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Охрана труда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Вакансия
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        Редукторы
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Червячные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Цилиндрические редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Коническо-цилиндрические
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Планетарные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Мотор-редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Специальные редукторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ремонт редукторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Электродвигатели
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="">
+                        Металлообработка
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">
+                                Фрезерная обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Токарная обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Листовая обработка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контрактное производство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Изделия из пластмасс
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Механо-сборочные работы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Покрытия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Дополнительная обработка
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__mobile-menu__address">
+            <div class="header__mobile-menu__address__item">
+                <p class="name">
+                    Редукторы
+                </p>
+                <p class="value">
+                    г. Можга, Сюгаильский пр., 15
+                </p>
+            </div>
+            <div class="header__mobile-menu__address__item">
+                <p class="name">
+                    Металлообработка
+                </p>
+                <p class="value">
+                    г. Ижевск, Воткинское шоссе, 308
+                </p>
+            </div>
+        </div>
+        <div class="header__mobile-menu__bottom">
+            <div class="header__mobile-menu__contact">
+                <a href="" class="header__mobile-menu__tel">
+                    +7 (3412) 570-340
+                </a>
+                <a href="" class="header__mobile-menu__mail">
+                    sell@zavod-reduktor.ru
+                </a>
+            </div>
+            <a href="" class="header__mobile-menu__btn">
+                Бесплатный подбор редуктора
+            </a>
+        </div>
+    </div>
+    <section class="product-page">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="product-page__wrap">
+                <div class="product-page__top">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Червячные редукторы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Одноступенчатый
+                                </a>
+                            </li>
+                            <li>
+                                Редуктор 1Ч-63АМ
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="product-page__title">
+                        Редуктор 1Ч-63АМ
+                    </h1>
+                </div>
+                <div class="product-page__main">
+                    <div class="product-page__left">
+                        <div class="swiper product-page__main-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/images/product.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/product2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/product.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/product2.png" alt=""></div>
+                            </div>
+                            <button class="product-page__swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM19 9H1V7H19V9Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <button class="product-page__swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
+                                    fill="none">
+                                    <path
+                                        d="M18.7071 7.2929C19.0976 7.68342 19.0976 8.31659 18.7071 8.70711L12.3431 15.0711C11.9526 15.4616 11.3195 15.4616 10.9289 15.0711C10.5384 14.6805 10.5384 14.0474 10.9289 13.6569L16.5858 8L10.9289 2.34315C10.5384 1.95262 10.5384 1.31946 10.9289 0.928934C11.3195 0.53841 11.9526 0.53841 12.3431 0.928934L18.7071 7.2929ZM1.74846e-07 7L18 7L18 9L-1.74846e-07 9L1.74846e-07 7Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="swiper product-page__thumbs-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/images/product.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/product2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/product.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/images/product2.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-page__right">
+                        <div class="product-page__info">
+                            <p class="title">
+                                Описание
+                            </p>
+                            <div class="text">
+                                Одноступенчатые червячные редукторы серии 1Ч-63АМ изготавливаются из высококачественных
+                                материалов, российская сборка. Редукторы с червячной передачей комплектуются накладными
+                                лапами, фланцами (входными и выходными), выступающими валами. Синтетическое масло
+                                рассчитано на весь срок службы
+                            </div>
+                        </div>
+                        <div class="product-page__characteristics">
+                            <p class="title">
+                                Характеристики
+                            </p>
+                            <div class="content">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Тип передачи
+                                        </td>
+                                        <td>
+                                            Червячные
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Расположение осей
+                                        </td>
+                                        <td>
+                                            Скрещивающиеся
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Количество ступеней
+                                        </td>
+                                        <td>
+                                            Одноступенчатый
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Передаточное отношение
+                                        </td>
+                                        <td>
+                                            8 — 80
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Крутящий момент Н*м
+                                        </td>
+                                        <td>
+                                            130
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Масса, кг
+                                        </td>
+                                        <td>
+                                            12,3 (16)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="product-page__right_bottom">
+                            <p class="product-page__price">
+                                Цена по запросу
+                            </p>
+                            <button class="product-page__btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-page__tabs">
+                    <div class="tab__btns">
+                        <button class="tab-btn active" data-tab="1">Технические характеристики</button>
+                        <button class="tab-btn" data-tab="2">Габаритные размеры</button>
+                        <button class="tab-btn" data-tab="3">Валы и варианты сборки</button>
+                        <button class="tab-btn" data-tab="4">Дополнительная информация</button>
+                    </div>
+
+                    <div class="tab-content tab-content__characteristics active" data-tab="1">
+                        <div class="tab-content__head">
+                            Габаритные размеры
+                        </div>
+                        <div class="tab-content__characteristics__table">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Передаточное число, ном
+                                    </td>
+                                    <td>
+                                        <div class="content">
+                                            <span>
+                                                8
+                                            </span>
+                                            <span>
+                                                10
+                                            </span>
+                                            <span>
+                                                12,5
+                                            </span>
+                                            <span>
+                                                16
+                                            </span>
+                                            <span>
+                                                20
+                                            </span>
+                                            <span>
+                                                25
+                                            </span>
+                                            <span>
+                                                31,5
+                                            </span>
+                                            <span>
+                                                40
+                                            </span>
+                                            <span>
+                                                50
+                                            </span>
+                                            <span>
+                                                63
+                                            </span>
+                                            <span>
+                                                80
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Частота вращения входного вала, об/мин
+                                    </td>
+                                    <td>
+                                        <div class="content">
+                                            <span>
+                                                1500
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Крутящий момент Mm, Hm
+                                    </td>
+                                    <td>
+                                        <div class="content">
+                                            <span>
+                                                105
+                                            </span>
+                                            <span>
+                                                100
+                                            </span>
+                                            <span>
+                                                93
+                                            </span>
+                                            <span>
+                                                120
+                                            </span>
+                                            <span>
+                                                110
+                                            </span>
+                                            <span>
+                                                100
+                                            </span>
+                                            <span>
+                                                130
+                                            </span>
+                                            <span>
+                                                120
+                                            </span>
+                                            <span>
+                                                110
+                                            </span>
+                                            <span>
+                                                95
+                                            </span>
+                                            <span>
+                                                85
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Термическая мощность, Nt, Квт
+                                    </td>
+                                    <td>
+                                        <div class="content">
+                                            <span>
+                                                2,4
+                                            </span>
+                                            <span>
+                                                1,85
+                                            </span>
+                                            <span>
+                                                1,3
+                                            </span>
+                                            <span>
+                                                1,45
+                                            </span>
+                                            <span>
+                                                1,1
+                                            </span>
+                                            <span>
+                                                0,76
+                                            </span>
+                                            <span>
+                                                0,89
+                                            </span>
+                                            <span>
+                                                0,69
+                                            </span>
+                                            <span>
+                                                0,57
+                                            </span>
+                                            <span>
+                                                0,37
+                                            </span>
+                                            <span>
+                                                0,27
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Масса, кг
+                                    </td>
+                                    <td>
+                                        <div class="content">
+                                            <span>
+                                                12,3 (16)
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tab-content__scroll">
+                            Листайте вправо
+                        </div>
+                    </div>
+                    <div class="tab-content tab-content__dimensions" data-tab="2">
+                        <div class="tab-content__head">
+                            Габаритные размеры
+                        </div>
+                        <div class="tab-content__dimensions__content">
+                            <img src="assets/images/dimensions.png" alt="">
+                        </div>
+                    </div>
+                    <div class="tab-content" data-tab="3">
+                        <div class="tab-content__head">
+                            Валы и варианты сборки
+                        </div>
+                    </div>
+                    <div class="tab-content" data-tab="4">
+                        <div class="tab-content__head">
+                            Дополнительная информация
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="feedback__wrap">
+                <p class="feedback__pretitle">
+                    форма обратной связи
+                </p>
+                <h2 class="feedback__title">
+                    БЕСПЛАТНЫЙ ПОДБОР РЕДУКТОРА
+                </h2>
+                <div class="feedback__main">
+                    <form action="">
+                        <div class="form__content">
+                            <input type="text" placeholder="ваше имя">
+                            <input type="text" placeholder="номер телефона">
+                            <input type="text" placeholder="e-mail">
+                            <textarea name="" id="" placeholder="сообщение"></textarea>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" class="checkbox-input" id="form-policy" name="form-policy"
+                                value="form-policy">
+                            <label for="form-policy" class="checkbox-label">Нажимая кнопку «Отправить», я подтверждаю
+                                свое <a href="">согласие на обработку моих персональных данных</a></label>
+                        </div>
+                        <button>
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+            <div class="line-four"></div>
+            <div class="line-five"></div>
+        </div>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer_top">
+                    <div class="col">
+                        <a href="" class="footer__logo">
+                            <img src="assets/images/footer_logo.svg" alt="">
+                            <span>
+                                Завод-редуктор
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Продукция
+                        </p>
+                        <div class="col__content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Червячные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Цилиндрические редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Коническо-цилиндрические
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Планетарные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Мотор-редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Специальные редукторы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Ремонт редукторов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Электродвигатели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="name">
+                            Металлообработка
+                        </p>
+                        <div class="col__content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Фрезерная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Токарная обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Листовая обработка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Контрактное производство
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Изделия из пластмасс
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Механо-сборочные работы
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Покрытия
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Дополнительная обработка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col footer__contact">
+                        <p class="name">
+                            Контакты
+                        </p>
+                        <div class="col__content col__contact">
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Производство редукторов
+                                </p>
+                                <p class="col__contact__item__text">
+                                    г. Можга, проезд Сюгаильский, 15
+                                </p>
+                                <a href="" class="col__contact__item__tel">
+                                    +7 (3412) 570-340
+                                </a>
+                                <a href="" class="col__contact__item__mail">
+                                    sell@zavod-reduktor.ru
+                                </a>
+                            </div>
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Металлообработка
+                                </p>
+                                <p class="col__contact__item__text">
+                                    г. Ижевск, Воткинское шоссе, 308
+                                </p>
+                                <a href="" class="col__contact__item__tel">
+                                    +7 (3412) 570-988
+                                </a>
+                                <a href="" class="col__contact__item__mail">
+                                    uslugi@zavod-reduktor.ru
+                                </a>
+                            </div>
+                            <div class="col__contact__item">
+                                <p class="col__contact__item__name">
+                                    Соцсети
+                                </p>
+                                <a href="" class="col__contact__item__soc">
+                                    ВКонтакте
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="col">
+                        <p class="footer__copyright">
+                            ООО «ЗАВОД-РЕДУКТОР». Все права защищены
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="footer__policy">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                    <div class="col">
+                        <p class="footer__design">
+                            Дизайн сайта — 
+                            <a href="">
+                                FOMICHEV
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
