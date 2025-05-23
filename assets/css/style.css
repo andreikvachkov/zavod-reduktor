@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh;
     color: #000;
     font-family: Inter;
     font-size: 1rem;
@@ -29,11 +29,6 @@ body {
 }
 html {
     font-size: calc(16vw / 19.2);
-}
-@media (min-width: 1920px) {
-  html {
-    font-size: 16px;
-  }
 }
 @media screen and (max-width: 768px) {
     html {
@@ -195,16 +190,21 @@ img {
 header {
     width: 100%;
     height: 3.8125rem;
-    position: absolute;
+    position: fixed;
     z-index: 200;
     opacity: 0;
     transition: opacity 0.2s ease;
+    background: #fff;
+    border-bottom: transparent;
+    border-bottom: 0.0625rem solid #e2e2e2;
 }
 .header__wrap {
     display: flex;
     align-items: center;
     height: 100%;
     border: 0.0625rem solid #e2e2e2;
+    border-bottom: none;
+    margin-bottom: -0.0625rem;
 }
 .header__left {
     padding-left: 1.25rem;
@@ -325,6 +325,15 @@ header {
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.06rem;
+    transition: all 0.3s ease;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__right-item a:hover {
+    color: #e92323;
 }
 .header__menu-btn {
     display: none;
@@ -353,18 +362,18 @@ header {
     height: 0.875rem;
 }
 .header__menu-btn.active {
-    color: #E92323;
+    color: #e92323;
 }
 
 .header__mobile-menu {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    position: absolute;
-    top: -100vh;
+    position: fixed;
+    top: -100dvh;
     left: 0;
     width: 100%;
-    height: calc(100vh - 2.75rem);
+    height: calc(100dvh - 2.75rem);
     background: #fff;
     z-index: 100;
     border-top: 0.0625rem solid #e2e2e2;
@@ -487,6 +496,9 @@ header {
     background: #e92323;
 }
 @media (min-width: 769px) {
+    .notfound-page header {
+        background: #000;
+    }
     .notfound-page .header__logo {
         color: #fff;
     }
@@ -498,6 +510,9 @@ header {
     }
     .notfound-page .header__right-item a {
         color: #fff;
+    }
+    .notfound-page .header__right-item a:hover {
+        color: #e92323;
     }
 }
 @media (max-width: 768px) {
@@ -542,7 +557,7 @@ header {
 /* hero start  */
 
 .hero {
-    height: 100vh;
+    height: 100dvh;
     background: #f5f5f5;
     padding: 3rem 0 2.5rem;
     position: relative;
@@ -681,7 +696,7 @@ header {
 /* video start  */
 
 .video {
-    height: 50vh;
+    height: 50dvh;
     position: relative;
 }
 @media (max-width: 768px) {
@@ -752,19 +767,17 @@ header {
     height: 1.5rem;
     right: 1.875rem;
     top: 1.875rem;
-    background-color: black;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: contain;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    transition: background-color 0.4s ease;
+    background: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    /* transition: background-color 0.4s ease; */
 }
 .catalog-category__item:hover::before {
-    background-color: #e92323;
+    background: url("../images/arrow-red.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 .catalog-category__item__img {
     position: relative;
@@ -1182,19 +1195,16 @@ header {
     right: 1.875rem;
     top: 1.875rem;
     z-index: 2;
-    background-color: white;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: contain;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    transition: background-color 0.3s ease;
+    background: url("../images/arrow-white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .about__item:last-child:hover .about__item__content::before {
-    background-color: #e92323;
+    background: url("../images/arrow-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .about__item .about__item__text {
     color: #fff;
@@ -1271,7 +1281,10 @@ header {
         height: 1rem;
         right: 0.75rem;
         top: 0.75rem;
-        background-color: #e92323;
+        background: url("../images/arrow-red.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     .about__item .about__item__text {
         color: #e92323;
@@ -1292,7 +1305,7 @@ header {
 /* advantages start  */
 
 .advantages {
-    min-height: 100vh;
+    min-height: 100dvh;
     /* background: url("../images/advantager_bg.jpg");
     background-repeat: no-repeat;
     background-position: top center;
@@ -2059,7 +2072,9 @@ header {
     .clients__main {
         margin-top: 1.875rem;
         display: flex;
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 0.625rem;
     }
     .clients__item {
         width: 9.4375rem;
@@ -2779,19 +2794,16 @@ footer .line-five {
     height: 1.5rem;
     right: 1.875rem;
     top: 1.875rem;
-    background-color: black;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: contain;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    transition: background-color 0.4s ease;
+    background: url("../images/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .category-page__item:hover::before {
-    background-color: #e92323;
+    background: url("../images/arrow-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .category-page__item__img {
     position: relative;
@@ -2882,9 +2894,6 @@ footer .line-five {
         right: 0.75rem;
         top: 0.75rem;
     }
-    .category-page__item:hover::before {
-        background-color: black;
-    }
     .category-page__item__img img {
         width: 8.875rem;
     }
@@ -2971,6 +2980,8 @@ footer .line-five {
 }
 .catalog-page__item__name {
     width: 100%;
+}
+.catalog-page__item__name a {
     padding: 1.875rem 1.25rem;
     background: #e92323;
     color: #fff;
@@ -2979,8 +2990,10 @@ footer .line-five {
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
-    letter-spacing: -1.68px;
+    letter-spacing: -0.105rem;
     text-transform: uppercase;
+    display: flex;
+    width: 100%;
 }
 .catalog-page__item__content {
     margin-top: 0.125rem;
@@ -3065,7 +3078,7 @@ footer .line-five {
         width: 100%;
         gap: 2.5rem;
     }
-    .catalog-page__item__name {
+    .catalog-page__item__name a {
         padding: 1.25rem;
         font-size: 1.75rem;
         letter-spacing: -0.07rem;
@@ -3092,9 +3105,6 @@ footer .line-five {
         padding: 0.5rem 1.25rem;
         font-size: 0.875rem;
         letter-spacing: -0.0437rem;
-    }
-    .catalog-page__table__row .col:first-child {
-        text-decoration-line: none;
     }
     .catalog-page__table__row:hover .col {
         background: #fff;
@@ -3420,7 +3430,7 @@ footer .line-five {
 
 .notfound {
     background: #000;
-    height: 100vh;
+    height: 100dvh;
     padding: 10rem 0 5.875rem;
     position: relative;
     position: relative;
@@ -3451,7 +3461,7 @@ footer .line-five {
 }
 .notfound__text {
     color: #fff;
-    font-family: "TT Hoves Pro Trial";
+    font-family: "TT Hoves Pro Trial", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
@@ -3485,7 +3495,7 @@ footer .line-five {
     .notfound {
         padding: 5.25rem 0 0rem;
         height: auto;
-        min-height: 100vh;
+        min-height: 100dvh;
     }
     .notfound .line-one {
         background: rgba(232, 232, 232, 0.3);
@@ -3641,7 +3651,7 @@ footer .line-five {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f5f5f5;
+    background: #fff;
     cursor: pointer;
 }
 .product-page__main-slider .swiper-slide img {
@@ -4673,7 +4683,7 @@ footer .line-five {
 .frezer-hero {
     position: relative;
     padding: 7.5rem 0 2.5rem;
-    height: 100vh;
+    height: 100dvh;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../images/frezer.png");
     background-color: #f5f5f5;
     background-position: center 3.8125rem;
@@ -5852,20 +5862,17 @@ footer .line-five {
     height: 1.375rem;
     right: 1.875rem;
     top: 1.875rem;
-    background-color: black;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: contain;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    transition: background-color 0.4s ease;
+    background: url("../images/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     z-index: 2;
 }
 .frezer-uslugi__link:hover::before {
-    background-color: white;
+    background: url("../images/arrow-white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .frezer-uslugi__link__name {
     font-size: 1.375rem;
@@ -5932,10 +5939,16 @@ footer .line-five {
         height: 0.75rem;
         right: 0.75rem;
         top: 0.75rem;
-        background-color: #fff;
+        background: url("../images/arrow-white.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     .frezer-uslugi__link:hover::before {
-        background-color: #fff;
+        background: url("../images/arrow-white.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     .frezer-uslugi__link__name {
         font-size: 0.875rem;
@@ -5956,7 +5969,7 @@ footer .line-five {
 /* metal-hero start  */
 
 .metal-hero {
-    height: 100vh;
+    height: 100dvh;
     background: #f5f5f5;
     padding: 6.25rem 0 2.5rem;
     position: relative;
@@ -6185,20 +6198,17 @@ footer .line-five {
     height: 1.375rem;
     right: 1.875rem;
     top: 1.875rem;
-    background-color: black;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: contain;
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M23 23V1M23 1H1M23 1L1.6875 22.3125' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    transition: background-color 0.4s ease;
+    background: url("../images/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     z-index: 2;
 }
 .metal-uslugi__link:hover::before {
-    background-color: white;
+    background: url("../images/arrow-white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .metal-uslugi__link__name {
     font-size: 1.375rem;
@@ -6271,10 +6281,16 @@ footer .line-five {
         height: 0.75rem;
         right: 0.75rem;
         top: 0.75rem;
-        background-color: #fff;
+        background: url("../images/arrow-white.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     .metal-uslugi__link:hover::before {
-        background-color: #fff;
+        background: url("../images/arrow-white.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     .metal-uslugi__link__name {
         font-size: 14px;

@@ -84,32 +84,38 @@ gsap.utils.toArray(".about__anim-pretitle, .about__anim-title, .about__anim-text
         });
 });
 
-gsap.utils.toArray(".catalog-category__item").forEach((item, index) => {
-    const img = item.querySelector(".catalog-category__item__img");
-    const info = item.querySelector(".catalog-category__item__info");
+const items = gsap.utils.toArray(".catalog-category__item");
 
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: item,
-            start: "top 95%",
-            toggleActions: "play none none none"
-        }
-    });
+const imgs = items.map(item => item.querySelector(".catalog-category__item__img"));
+const infos = items.map(item => item.querySelector(".catalog-category__item__info"));
 
-    tl.from(img, {
-        y: 100,
-        opacity: 0,
-        duration: 0.4,
-        ease: "power2.out",
-        delay: index * 0.2
-    }).from(info, {
-        y: 50,
-        opacity: 0,
-        duration: 0.4,
-        ease: "power2.out"
-    }, "-=0.2");
+gsap.set([...imgs, ...infos], { y: 100, opacity: 0 });
+
+gsap.to(imgs, {
+  y: 0,
+  opacity: 1,
+  duration: 0.5,
+  ease: "power2.out",
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".catalog-category__main",
+    start: "top 95%",
+    toggleActions: "play none none none"
+  }
 });
 
+gsap.to(infos, {
+  y: 0,
+  opacity: 1,
+  duration: 0.5,
+  ease: "power2.out",
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".catalog-category__main",
+    start: "top 95%",
+    toggleActions: "play none none none"
+  }
+});
 
 gsap.from(".clients__item img", {
     scrollTrigger: {

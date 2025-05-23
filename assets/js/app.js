@@ -22,6 +22,7 @@ const thumbsSwiper = new Swiper('.product-page__thumbs-slider', {
             spaceBetween: 10,
         },
     },
+    loop: true,
 });
 
 const mainSwiper = new Swiper('.product-page__main-slider', {
@@ -34,7 +35,7 @@ const mainSwiper = new Swiper('.product-page__main-slider', {
     thumbs: {
         swiper: thumbsSwiper,
     },
-
+    loop: true,
 });
 
 const frezer_production__thumbs_swiper = new Swiper('.frezer-production__thumbs-swiper', {
@@ -48,6 +49,7 @@ const frezer_production__thumbs_swiper = new Swiper('.frezer-production__thumbs-
             spaceBetween: 10,
         },
     },
+    loop: true,
 });
 
 const frezer_production__main_swiper = new Swiper('.frezer-production__main-swiper', {
@@ -68,7 +70,7 @@ const frezer_production__main_swiper = new Swiper('.frezer-production__main-swip
     thumbs: {
         swiper: frezer_production__thumbs_swiper,
     },
-
+    loop: true,
 });
 
 
@@ -83,6 +85,7 @@ const frezer_invitation__thumbs_swiper = new Swiper('.frezer-invitation__thumbs-
             spaceBetween: 10,
         },
     },
+    loop: true,
 });
 
 const frezer_invitation__main_swiper = new Swiper('.frezer-invitation__main-swiper', {
@@ -103,7 +106,7 @@ const frezer_invitation__main_swiper = new Swiper('.frezer-invitation__main-swip
     thumbs: {
         swiper: frezer_invitation__thumbs_swiper,
     },
-
+    loop: true,
 });
 
 document.querySelectorAll('.frezer-invitation__swiper-button-next__mob')
@@ -157,6 +160,7 @@ const about_history__swiper = new Swiper('.about-history__swiper', {
         disableOnInteraction: false,
     },
     speed: 1000,
+    loop: true,
 });
 
 
