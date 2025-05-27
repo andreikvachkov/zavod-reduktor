@@ -689,6 +689,7 @@ header {
     .hero__video-mobile {
         display: block;
         top: 2.75rem;
+        height: calc(100% - 2.75rem);
     }
 }
 /* hero end  */
