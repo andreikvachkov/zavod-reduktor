@@ -22,6 +22,16 @@
 </head>
 
 <body>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.innerWidth <= 768) {
+                document.querySelector('.hero')?.style.minHeight = window.innerHeight + 'px';
+                document.querySelector('.advantages')?.style.minHeight = window.innerHeight + 'px';
+                document.querySelector('.frezer-hero')?.style.height = window.innerHeight + 'px';
+                document.querySelector('.metal-hero')?.style.height = window.innerHeight + 'px';
+            }
+        });
+    </script>
     <header>
         <div class="container">
             <div class="header__wrap">

@@ -22,6 +22,17 @@
 </head>
 
 <body>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.innerWidth <= 768) {
+                document.querySelector('.hero')?.style.minHeight = window.innerHeight + 'px';
+                document.querySelector('.video')?.style.height = (window.innerHeight * 0.5) + 'px';
+                document.querySelector('.advantages')?.style.minHeight = window.innerHeight + 'px';
+                document.querySelector('.frezer-hero')?.style.height = window.innerHeight + 'px';
+                document.querySelector('.metal-hero')?.style.height = window.innerHeight + 'px';
+            }
+        });
+    </script>
     <header>
         <div class="container">
             <div class="header__wrap">
@@ -983,7 +994,8 @@
                         </p>
                         <div class="frezer-invitation__swiper__pagination"></div>
                         <div class="frezer-production__swiper__btn">
-                            <button class="frezer-invitation__swiper-button-prev frezer-invitation__swiper-button-prev__mob">
+                            <button
+                                class="frezer-invitation__swiper-button-prev frezer-invitation__swiper-button-prev__mob">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
                                     fill="none">
                                     <path
@@ -991,7 +1003,8 @@
                                         fill="white" />
                                 </svg>
                             </button>
-                            <button class="frezer-invitation__swiper-button-next frezer-invitation__swiper-button-next__mob">
+                            <button
+                                class="frezer-invitation__swiper-button-next frezer-invitation__swiper-button-next__mob">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16"
                                     fill="none">
                                     <path
